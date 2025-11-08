@@ -13,6 +13,7 @@ import {
   KeyboardAvoidingView,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { useTranslation } from 'react-i18next';
 
 const PRIMARY = '#002855'; // darker rich blue
 const WHITE = '#FFFFFF';
@@ -20,6 +21,7 @@ const MUTED = '#64748B';
 
 export default function SignIn() {
   const navigation = useNavigation<any>();
+  const { t } = useTranslation();
 
   // Animation for logo
   const scale = useRef(new Animated.Value(0.8)).current;
@@ -61,8 +63,10 @@ export default function SignIn() {
           />
         </Animated.View>
 
-        <Text style={styles.topTitle}>Welcome Back</Text>
-        <Text style={styles.topSubtitle}>Sign in to continue to 3PL Dynamics</Text>
+        <Text style={styles.topTitle}>{t ? t('welcome_back') : 'Welcome Back'}</Text>
+        <Text style={styles.topSubtitle}>
+          {t ? t('sign_in_subtitle') : 'Sign in to continue to 3PL Dynamics'}
+        </Text>
       </View>
 
       {/* White rounded card with form */}
@@ -74,7 +78,7 @@ export default function SignIn() {
           <TextInput
             value={email}
             onChangeText={setEmail}
-            placeholder="Email"
+            placeholder={t ? t('email') : 'Email'}
             placeholderTextColor="#9AA3B2"
             keyboardType="email-address"
             autoCapitalize="none"
@@ -84,24 +88,27 @@ export default function SignIn() {
           <TextInput
             value={password}
             onChangeText={setPassword}
-            placeholder="Password"
+            placeholder={t ? t('password') : 'Password'}
             placeholderTextColor="#9AA3B2"
             secureTextEntry
             style={styles.input}
           />
 
           <Pressable onPress={handleForgotPassword} style={styles.forgotWrap}>
-            <Text style={styles.forgotText}>Forgot password?</Text>
+            <Text style={styles.forgotText}>
+              {t ? t('forgot_password') : 'Forgot password?'}
+            </Text>
           </Pressable>
 
           <Pressable onPress={handleSignIn} style={styles.signInBtn}>
-            <Text style={styles.signInText}>Sign In</Text>
+            <Text style={styles.signInText}>{t ? t('sign_in') : 'Sign In'}</Text>
           </Pressable>
 
           <Pressable onPress={() => navigation.navigate('SignUp')} style={styles.createWrap}>
             <Text style={styles.createText}>
-              Don't have an account?{' '}
-              <Text style={styles.createTextBold}>Create Account</Text>
+              {t
+                ? t('dont_have_account', { link: t('create_account_small') })
+                : "Don't have an account? Create Account"}
             </Text>
           </Pressable>
         </View>

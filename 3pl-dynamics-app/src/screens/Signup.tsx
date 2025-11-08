@@ -15,6 +15,7 @@ import {
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation';
 import { Colors } from '../theme';
+import { useTranslation } from 'react-i18next';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'SignUp'>;
 
@@ -23,6 +24,8 @@ const WHITE = Colors.white;
 const MUTED = '#64748B';
 
 export default function SignUpScreen({ navigation }: Props) {
+  const { t } = useTranslation();
+
   // animation for the circular logo (same as SignIn)
   const scale = useRef(new Animated.Value(0.8)).current;
   const translateY = useRef(new Animated.Value(-10)).current;
@@ -61,8 +64,10 @@ export default function SignUpScreen({ navigation }: Props) {
           />
         </Animated.View>
 
-        <Text style={styles.topTitle}>Create account</Text>
-        <Text style={styles.topSubtitle}>Join 3PL Dynamics to manage your logistics</Text>
+        <Text style={styles.topTitle}>{t ? t('create_account') : 'Create account'}</Text>
+        <Text style={styles.topSubtitle}>
+          {t ? t('welcome_dashboard') : 'Join 3PL Dynamics to manage your logistics'}
+        </Text>
       </View>
 
       {/* White rounded card with form (overlapping) */}
@@ -74,7 +79,7 @@ export default function SignUpScreen({ navigation }: Props) {
           <TextInput
             value={name}
             onChangeText={setName}
-            placeholder="Full name"
+            placeholder={t ? t('full_name') ?? 'Full name' : 'Full name'}
             placeholderTextColor="#9AA3B2"
             style={styles.input}
             autoCapitalize="words"
@@ -83,7 +88,7 @@ export default function SignUpScreen({ navigation }: Props) {
           <TextInput
             value={email}
             onChangeText={setEmail}
-            placeholder="Email"
+            placeholder={t ? t('email') : 'Email'}
             placeholderTextColor="#9AA3B2"
             keyboardType="email-address"
             autoCapitalize="none"
@@ -93,19 +98,21 @@ export default function SignUpScreen({ navigation }: Props) {
           <TextInput
             value={password}
             onChangeText={setPassword}
-            placeholder="Password"
+            placeholder={t ? t('password') : 'Password'}
             placeholderTextColor="#9AA3B2"
             secureTextEntry
             style={styles.input}
           />
 
           <Pressable onPress={handleSignUp} style={styles.primaryBtn}>
-            <Text style={styles.primaryText}>Create account</Text>
+            <Text style={styles.primaryText}>{t ? t('create_account') : 'Create account'}</Text>
           </Pressable>
 
           <Pressable onPress={() => navigation.navigate('SignIn')} style={styles.createWrap}>
             <Text style={styles.createText}>
-              Already have an account? <Text style={styles.createTextBold}>Sign in</Text>
+              {t
+                ? t('dont_have_account', { link: t('create_account_small') })
+                : 'Already have an account? Sign in'}
             </Text>
           </Pressable>
         </View>

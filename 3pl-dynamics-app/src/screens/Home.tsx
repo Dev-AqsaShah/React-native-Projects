@@ -12,12 +12,15 @@ import {
 import { Colors } from '../theme';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation';
+import { useTranslation } from 'react-i18next';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
 
 const { width: W } = Dimensions.get('window');
 
 export default function HomeScreen({ navigation }: Props) {
+  const { t } = useTranslation();
+
   // subtle entrance animation for the avatar
   const scale = useRef(new Animated.Value(0.85)).current;
   const y = useRef(new Animated.Value(-8)).current;
@@ -41,37 +44,37 @@ export default function HomeScreen({ navigation }: Props) {
         />
       </Animated.View>
 
-      <Text style={styles.hello}>Hello,</Text>
-      <Text style={styles.name}>Welcome to 3PL Dynamics</Text>
+      <Text style={styles.hello}>{t ? t('hello') : 'Hello,'}</Text>
+      <Text style={styles.name}>{t ? t('welcome_dashboard') : 'Welcome to 3PL Dynamics'}</Text>
 
       {/* Dashboard card */}
       <View style={styles.card}>
-        <Text style={styles.cardTitle}>Overview</Text>
+        <Text style={styles.cardTitle}>{t ? t('overview') : 'Overview'}</Text>
 
         <View style={styles.statsRow}>
           <View style={styles.statBox}>
             <Text style={styles.statValue}>128</Text>
-            <Text style={styles.statLabel}>Orders</Text>
+            <Text style={styles.statLabel}>{t ? t('orders') : 'Orders'}</Text>
           </View>
 
           <View style={[styles.statBox, { marginLeft: 12 }]}>
             <Text style={styles.statValue}>43</Text>
-            <Text style={styles.statLabel}>Deliveries</Text>
+            <Text style={styles.statLabel}>{t ? t('deliveries') : 'Deliveries'}</Text>
           </View>
         </View>
 
         <Text style={styles.cardNote}>
-          Track shipments, review performance, and manage routes — all in one place.
+          {t ? t('dashboard_note') : 'Track shipments, review performance, and manage routes — all in one place.'}
         </Text>
 
         <Pressable style={styles.primaryBtn} onPress={() => navigation.navigate('Welcome')}>
-          <Text style={styles.primaryBtnText}>Go to Dashboard</Text>
+          <Text style={styles.primaryBtnText}>{t ? t('go_to_dashboard') : 'Go to Dashboard'}</Text>
         </Pressable>
       </View>
 
       {/* Sign out (smaller) */}
       <Pressable style={styles.signOut} onPress={() => navigation.replace('Welcome')}>
-        <Text style={styles.signOutText}>Sign out</Text>
+        <Text style={styles.signOutText}>{t ? t('sign_out') : 'Sign out'}</Text>
       </Pressable>
     </View>
   );
