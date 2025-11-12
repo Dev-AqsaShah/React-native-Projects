@@ -45,7 +45,7 @@ export default function SignUpScreen({ navigation }: Props) {
 
   function handleSignUp() {
     // TODO: add validation/auth — for now navigate to Home
-    navigation.replace('Home');
+    navigation.replace('MainTabs');
   }
 
   return (
@@ -110,9 +110,7 @@ export default function SignUpScreen({ navigation }: Props) {
 
           <Pressable onPress={() => navigation.navigate('SignIn')} style={styles.createWrap}>
             <Text style={styles.createText}>
-              {t
-                ? t('dont_have_account', { link: t('create_account_small') })
-                : 'Already have an account? Sign in'}
+              {t ? t('Already have an account', { link: t('sign_in_small') }) : 'Already have an account? Sign in'}
             </Text>
           </Pressable>
         </View>
