@@ -1,6 +1,7 @@
 {
   "welcome_title": "3PL Dynamics",
   "welcome_about": "为现代企业提供智能物流。 实时跟踪、更快的交付和透明的运营。 从本地配送到全国分销，助您轻松扩展。",
+
   "sign_in": "登录",
   "create_account": "创建账户",
   "welcome_back": "欢迎回来",
@@ -10,9 +11,9 @@
   "forgot_password": "忘记密码？",
   "dont_have_account": "没有账户？{{link}}",
   "create_account_small": "创建账户",
+
   "dashboard": "仪表板",
   "welcome_dashboard": "欢迎使用 3PL Dynamics",
-  "language_changed_restart": "语言已更改。请重新启动应用以应用布局方向。",
   "hello": "你好，",
   "overview": "概览",
   "orders": "订单",
@@ -20,7 +21,104 @@
   "dashboard_note": "跟踪货运、分析绩效并管理路线——一切尽在掌握。",
   "go_to_dashboard": "前往仪表板",
   "sign_out": "退出登录",
+
   "full_name": "全名",
   "create_account_title": "创建账户",
-  "join_subtitle": "加入 3PL Dynamics 管理您的物流"
+  "join_subtitle": "加入 3PL Dynamics 管理您的物流",
+
+  "settings": "设置",
+  "language": "语言",
+  "select_language": "选择语言",
+  "language_changed": "语言已更改",
+  "language_changed_restart": "语言已更改。请重新启动应用以应用布局方向。",
+  "close": "关闭",
+
+  "profile": "个人资料",
+  "profile_name": "姓名",
+  "profile_email": "电子邮箱",
+  "profile_phone": "电话",
+  "profile_address": "地址",
+  "profile_role": "角色",
+  "profile_company": "公司",
+  "profile_edit": "编辑个人资料",
+  "profile_upload_photo": "上传照片",
+  "profile_placeholder_avatar": "点击上传照片",
+
+  "products": "产品",
+  "product_details": "产品详情",
+  "product_quantity": "数量",
+  "product_description": "描述",
+  "view_details": "查看详情",
+  "add_to_cart": "加入购物车",
+  "sku": "库存单位",
+
+  "orders_title": "订单",
+  "order_number": "订单编号",
+  "order_status": "订单状态",
+  "status_in_transit": "运输中",
+  "status_delivered": "已交付",
+  "status_pending": "待处理",
+  "status_cancelled": "已取消",
+  "order_details": "订单详情",
+  "track_order": "跟踪订单",
+  "placed_on": "下单日期",
+
+  "about_title": "关于我们",
+  "about_paragraph": "我们提供先进的物流解决方案：实时跟踪、路线优化和透明操作，助力企业高效发展。",
+
+  "contact_title": "联系",
+  "contact_support": "支持: support@3pldynamics.com",
+  "contact_phone": "电话: +1 555 123 456",
+  "email_support": "发送邮件至支持",
+  "call_support": "致电支持",
+
+  "buttons": {
+    "save_changes": "保存更改",
+    "cancel": "取消",
+    "search": "搜索",
+    "ok": "确定",
+    "close": "关闭"
+  },
+
+  "placeholders": {
+    "search_products": "搜索产品或 SKU...",
+    "enter_email": "输入电子邮箱",
+    "enter_password": "输入密码",
+    "enter_phone": "输入电话号码",
+    "enter_address": "输入地址"
+  },
+
+  "validation": {
+    "required": "此字段为必填项",
+    "invalid_email": "无效的电子邮箱地址",
+    "min_password": "密码至少为 6 个字符"
+  },
+
+  "ui": {
+    "loading": "加载中",
+    "no_results": "没有结果",
+    "view_more": "查看更多",
+    "edit": "编辑",
+    "delete": "删除"
+  },
+
+  "auth": {
+    "already_have_account": "已有账户？{{link}}",
+    "username": "用户名",
+    "phone": "电话",
+    "address": "地址"
+  },
+
+  "tabs": {
+    "profile": "个人资料",
+    "products": "产品",
+    "orders": "订单",
+    "about": "关于我们",
+    "contact": "联系"
+  },
+
+  "notifications": {
+    "no_notifications": "没有通知",
+    "view_notifications": "查看通知"
+  }
 }

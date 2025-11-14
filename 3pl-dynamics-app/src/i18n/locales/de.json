@@ -22,5 +22,100 @@
   "sign_out": "Abmelden",
   "full_name": "Vollständiger Name",
   "create_account_title": "Konto erstellen",
-  "join_subtitle": "Treten Sie 3PL Dynamics bei, um Ihre Logistik zu verwalten"
+  "join_subtitle": "Treten Sie 3PL Dynamics bei, um Ihre Logistik zu verwalten",
+
+  "settings": "Einstellungen",
+  "language": "Sprache",
+  "select_language": "Sprache auswählen",
+  "language_changed": "Sprache geändert",
+  "close": "Schließen",
+
+  "profile": "Profil",
+  "profile_name": "Name",
+  "profile_email": "E-Mail",
+  "profile_phone": "Telefon",
+  "profile_address": "Adresse",
+  "profile_role": "Rolle",
+  "profile_company": "Unternehmen",
+  "profile_edit": "Profil bearbeiten",
+  "profile_upload_photo": "Foto hochladen",
+  "profile_placeholder_avatar": "Tippen, um Foto hochzuladen",
+
+  "products": "Produkte",
+  "product_details": "Produktdetails",
+  "product_quantity": "Menge",
+  "product_description": "Beschreibung",
+  "view_details": "Details ansehen",
+  "add_to_cart": "In den Warenkorb",
+  "sku": "Artikelnummer",
+
+  "orders_title": "Bestellungen",
+  "order_number": "Bestellnummer",
+  "order_status": "Bestellstatus",
+  "status_in_transit": "Unterwegs",
+  "status_delivered": "Zugestellt",
+  "status_pending": "Ausstehend",
+  "status_cancelled": "Storniert",
+  "order_details": "Bestelldetails",
+  "track_order": "Bestellung verfolgen",
+  "placed_on": "Bestellt am",
+
+  "about_title": "Über uns",
+  "about_paragraph": "Wir bieten moderne Logistiklösungen: Echtzeit-Tracking, Routenoptimierung und transparente Abläufe, damit Unternehmen wachsen können.",
+
+  "contact_title": "Kontakt",
+  "contact_support": "Support: support@3pldynamics.com",
+  "contact_phone": "Telefon: +1 555 123 456",
+  "email_support": "Support per E-Mail",
+  "call_support": "Support anrufen",
+
+  "buttons": {
+    "save_changes": "Änderungen speichern",
+    "cancel": "Abbrechen",
+    "search": "Suchen",
+    "ok": "OK",
+    "close": "Schließen"
+  },
+
+  "placeholders": {
+    "search_products": "Suche nach Produkt oder Artikelnummer...",
+    "enter_email": "Geben Sie Ihre E-Mail ein",
+    "enter_password": "Geben Sie Ihr Passwort ein",
+    "enter_phone": "Geben Sie Ihre Telefonnummer ein",
+    "enter_address": "Geben Sie die Adresse ein"
+  },
+
+  "validation": {
+    "required": "Dieses Feld ist erforderlich",
+    "invalid_email": "Ungültige E-Mail-Adresse",
+    "min_password": "Das Passwort muss mindestens 6 Zeichen lang sein"
+  },
+
+  "ui": {
+    "loading": "Wird geladen",
+    "no_results": "Keine Ergebnisse",
+    "view_more": "Mehr anzeigen",
+    "edit": "Bearbeiten",
+    "delete": "Löschen"
+  },
+
+  "auth": {
+    "already_have_account": "Sie haben bereits ein Konto? {{link}}",
+    "username": "Benutzername",
+    "phone": "Telefon",
+    "address": "Adresse"
+  },
+
+  "tabs": {
+    "profile": "Profil",
+    "products": "Produkte",
+    "orders": "Bestellungen",
+    "about": "Über",
+    "contact": "Kontakt"
+  },
+
+  "notifications": {
+    "no_notifications": "Keine Benachrichtigungen",
+    "view_notifications": "Benachrichtigungen anzeigen"
+  }
 }

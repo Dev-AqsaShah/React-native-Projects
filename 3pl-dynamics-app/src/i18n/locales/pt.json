@@ -1,6 +1,7 @@
 {
   "welcome_title": "3PL Dynamics",
   "welcome_about": "Logística inteligente para empresas modernas. Rastreamento em tempo real, entregas mais rápidas e operações transparentes. Projetado para escalar — de entregas locais à distribuição nacional.",
+
   "sign_in": "Entrar",
   "create_account": "Criar conta",
   "welcome_back": "Bem-vindo de volta",
@@ -10,9 +11,9 @@
   "forgot_password": "Esqueceu a senha?",
   "dont_have_account": "Não tem uma conta? {{link}}",
   "create_account_small": "Criar conta",
+
   "dashboard": "Painel",
   "welcome_dashboard": "Bem-vindo ao 3PL Dynamics",
-  "language_changed_restart": "Idioma alterado. Reinicie o aplicativo para aplicar a direção do layout.",
   "hello": "Olá,",
   "overview": "Visão geral",
   "orders": "Pedidos",
@@ -20,7 +21,104 @@
   "dashboard_note": "Acompanhe remessas, revise o desempenho e gerencie rotas — tudo em um só lugar.",
   "go_to_dashboard": "Ir para o painel",
   "sign_out": "Sair",
+
   "full_name": "Nome completo",
   "create_account_title": "Criar conta",
-  "join_subtitle": "Junte-se ao 3PL Dynamics para gerenciar sua logística"
+  "join_subtitle": "Junte-se ao 3PL Dynamics para gerenciar sua logística",
+
+  "settings": "Configurações",
+  "language": "Idioma",
+  "select_language": "Selecionar idioma",
+  "language_changed": "Idioma alterado",
+  "language_changed_restart": "Idioma alterado. Reinicie o aplicativo para aplicar a direção do layout.",
+  "close": "Fechar",
+
+  "profile": "Perfil",
+  "profile_name": "Nome",
+  "profile_email": "E-mail",
+  "profile_phone": "Telefone",
+  "profile_address": "Endereço",
+  "profile_role": "Cargo",
+  "profile_company": "Empresa",
+  "profile_edit": "Editar perfil",
+  "profile_upload_photo": "Carregar foto",
+  "profile_placeholder_avatar": "Toque para carregar uma foto",
+
+  "products": "Produtos",
+  "product_details": "Detalhes do produto",
+  "product_quantity": "Quantidade",
+  "product_description": "Descrição",
+  "view_details": "Ver detalhes",
+  "add_to_cart": "Adicionar ao carrinho",
+  "sku": "SKU",
+
+  "orders_title": "Pedidos",
+  "order_number": "Número do pedido",
+  "order_status": "Status do pedido",
+  "status_in_transit": "Em trânsito",
+  "status_delivered": "Entregue",
+  "status_pending": "Pendente",
+  "status_cancelled": "Cancelado",
+  "order_details": "Detalhes do pedido",
+  "track_order": "Rastrear pedido",
+  "placed_on": "Realizado em",
+
+  "about_title": "Sobre",
+  "about_paragraph": "Oferecemos soluções logísticas modernas: rastreamento em tempo real, otimização de rotas e operações transparentes para ajudar empresas a crescer.",
+
+  "contact_title": "Contato",
+  "contact_support": "Suporte: support@3pldynamics.com",
+  "contact_phone": "Telefone: +1 555 123 456",
+  "email_support": "Enviar e-mail ao suporte",
+  "call_support": "Ligar para o suporte",
+
+  "buttons": {
+    "save_changes": "Salvar alterações",
+    "cancel": "Cancelar",
+    "search": "Pesquisar",
+    "ok": "OK",
+    "close": "Fechar"
+  },
+
+  "placeholders": {
+    "search_products": "Pesquisar por produto ou SKU...",
+    "enter_email": "Digite o e-mail",
+    "enter_password": "Digite a senha",
+    "enter_phone": "Digite o número de telefone",
+    "enter_address": "Digite o endereço"
+  },
+
+  "validation": {
+    "required": "Este campo é obrigatório",
+    "invalid_email": "Endereço de e-mail inválido",
+    "min_password": "A senha deve ter pelo menos 6 caracteres"
+  },
+
+  "ui": {
+    "loading": "Carregando",
+    "no_results": "Nenhum resultado encontrado",
+    "view_more": "Ver mais",
+    "edit": "Editar",
+    "delete": "Excluir"
+  },
+
+  "auth": {
+    "already_have_account": "Já tem uma conta? {{link}}",
+    "username": "Nome de usuário",
+    "phone": "Telefone",
+    "address": "Endereço"
+  },
+
+  "tabs": {
+    "profile": "Perfil",
+    "products": "Produtos",
+    "orders": "Pedidos",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+
+  "notifications": {
+    "no_notifications": "Sem notificações",
+    "view_notifications": "Ver notificações"
+  }
 }

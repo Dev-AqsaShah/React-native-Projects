@@ -22,5 +22,100 @@
   "sign_out": "Se déconnecter",
   "full_name": "Nom complet",
   "create_account_title": "Créer un compte",
-  "join_subtitle": "Rejoignez 3PL Dynamics pour gérer votre logistique"
+  "join_subtitle": "Rejoignez 3PL Dynamics pour gérer votre logistique",
+
+  "settings": "Paramètres",
+  "language": "Langue",
+  "select_language": "Choisir la langue",
+  "language_changed": "Langue modifiée",
+  "close": "Fermer",
+
+  "profile": "Profil",
+  "profile_name": "Nom",
+  "profile_email": "E-mail",
+  "profile_phone": "Téléphone",
+  "profile_address": "Adresse",
+  "profile_role": "Rôle",
+  "profile_company": "Entreprise",
+  "profile_edit": "Modifier le profil",
+  "profile_upload_photo": "Téléverser une photo",
+  "profile_placeholder_avatar": "Touchez pour téléverser une photo",
+
+  "products": "Produits",
+  "product_details": "Détails du produit",
+  "product_quantity": "Quantité",
+  "product_description": "Description",
+  "view_details": "Voir les détails",
+  "add_to_cart": "Ajouter au panier",
+  "sku": "SKU",
+
+  "orders_title": "Commandes",
+  "order_number": "Numéro de commande",
+  "order_status": "Statut de la commande",
+  "status_in_transit": "En transit",
+  "status_delivered": "Livré",
+  "status_pending": "En attente",
+  "status_cancelled": "Annulé",
+  "order_details": "Détails de la commande",
+  "track_order": "Suivre la commande",
+  "placed_on": "Passé le",
+
+  "about_title": "À propos",
+  "about_paragraph": "Nous fournissons des solutions logistiques modernes : suivi en temps réel, optimisation des itinéraires et opérations transparentes pour aider les entreprises à se développer.",
+
+  "contact_title": "Contact",
+  "contact_support": "Support : support@3pldynamics.com",
+  "contact_phone": "Téléphone : +1 555 123 456",
+  "email_support": "Contacter par e-mail",
+  "call_support": "Appeler le support",
+
+  "buttons": {
+    "save_changes": "Enregistrer les modifications",
+    "cancel": "Annuler",
+    "search": "Rechercher",
+    "ok": "OK",
+    "close": "Fermer"
+  },
+
+  "placeholders": {
+    "search_products": "Rechercher par produit ou SKU...",
+    "enter_email": "Entrez l'e-mail",
+    "enter_password": "Entrez le mot de passe",
+    "enter_phone": "Entrez le numéro de téléphone",
+    "enter_address": "Entrez l'adresse"
+  },
+
+  "validation": {
+    "required": "Ce champ est obligatoire",
+    "invalid_email": "Adresse e-mail invalide",
+    "min_password": "Le mot de passe doit contenir au moins 6 caractères"
+  },
+
+  "ui": {
+    "loading": "Chargement",
+    "no_results": "Aucun résultat",
+    "view_more": "Voir plus",
+    "edit": "Modifier",
+    "delete": "Supprimer"
+  },
+
+  "auth": {
+    "already_have_account": "Vous avez déjà un compte ? {{link}}",
+    "username": "Nom d'utilisateur",
+    "phone": "Téléphone",
+    "address": "Adresse"
+  },
+
+  "tabs": {
+    "profile": "Profil",
+    "products": "Produits",
+    "orders": "Commandes",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+
+  "notifications": {
+    "no_notifications": "Aucune notification",
+    "view_notifications": "Voir les notifications"
+  }
 }

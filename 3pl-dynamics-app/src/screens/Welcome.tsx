@@ -16,6 +16,7 @@ import {
 import { useNavigation } from '@react-navigation/native';
 import { Ionicons, Feather } from '@expo/vector-icons';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+// import { RootStackParamList } from '../navigation/AppStack';
 
 // Define your navigator stack params
 type RootStackParamList = {
@@ -92,12 +93,9 @@ export default function WelcomeScreen() {
         <Text style={styles.brandText}>3PL Dynamics</Text>
 
         {/* Settings icon */}
-        <Pressable
-          onPress={() => navigation.navigate('Settings')}
-          style={styles.settingsBtn}
-        >
-          <Ionicons name="settings-outline" size={28} color={WHITE} />
-        </Pressable>
+<Pressable onPress={() => navigation.navigate('Settings')}>
+  <Ionicons name="settings-outline" size={28} color="white" />
+</Pressable>
       </View>
 
       {/* Main */}

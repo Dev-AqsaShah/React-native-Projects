@@ -1,6 +1,6 @@
 {
   "welcome_title": "3PL Dynamics",
-  "welcome_about": "لوجستيات ذكية للأعمال الحديثة. تتبع في الوقت الفعلي وتسليم أسرع وعمليات شفافة.مصمم للتوسع — من التوصيل المحلي إلى التوزيع الوطني.",
+  "welcome_about": "لوجستيات ذكية للأعمال الحديثة. تتبع في الوقت الفعلي وتسليم أسرع وعمليات شفافة. مصمم للتوسع — من التوصيل المحلي إلى التوزيع الوطني.",
   "sign_in": "تسجيل الدخول",
   "create_account": "إنشاء حساب",
   "welcome_back": "مرحباً بعودتك",
@@ -22,5 +22,100 @@
   "sign_out": "تسجيل الخروج",
   "full_name": "الاسم الكامل",
   "create_account_title": "إنشاء حساب",
-  "join_subtitle": "انضم إلى 3PL Dynamics لإدارة الخدمات اللوجستية الخاصة بك"
+  "join_subtitle": "انضم إلى 3PL Dynamics لإدارة الخدمات اللوجستية الخاصة بك",
+
+  "settings": "الإعدادات",
+  "language": "اللغة",
+  "select_language": "اختر اللغة",
+  "language_changed": "تم تغيير اللغة",
+  "close": "إغلاق",
+
+  "profile": "الملف الشخصي",
+  "profile_name": "الاسم",
+  "profile_email": "البريد الإلكتروني",
+  "profile_phone": "الهاتف",
+  "profile_address": "العنوان",
+  "profile_role": "المنصب",
+  "profile_company": "الشركة",
+  "profile_edit": "تعديل الملف",
+  "profile_upload_photo": "تحميل الصورة",
+  "profile_placeholder_avatar": "اضغط لتحميل الصورة",
+
+  "products": "المنتجات",
+  "product_details": "تفاصيل المنتج",
+  "product_quantity": "الكمية",
+  "product_description": "الوصف",
+  "view_details": "عرض التفاصيل",
+  "add_to_cart": "أضف إلى السلة",
+  "sku": "رمز المنتج",
+
+  "orders_title": "الطلبات",
+  "order_number": "رقم الطلب",
+  "order_status": "حالة الطلب",
+  "status_in_transit": "قيد النقل",
+  "status_delivered": "تم التسليم",
+  "status_pending": "قيد الانتظار",
+  "status_cancelled": "ملغي",
+  "order_details": "تفاصيل الطلب",
+  "track_order": "تتبع الطلب",
+  "placed_on": "تاريخ الطلب",
+
+  "about_title": "من نحن",
+  "about_paragraph": "نقدم حلولاً لوجستية حديثة: تتبع في الوقت الحقيقي، تحسين المسارات، وعمليات شفافة لمساعدة الشركات على التوسع.",
+
+  "contact_title": "اتصل بنا",
+  "contact_support": "الدعم: support@3pldynamics.com",
+  "contact_phone": "الهاتف: +1 555 123 456",
+  "email_support": "راسل الدعم",
+  "call_support": "اتصل بالدعم",
+
+  "buttons": {
+    "save_changes": "حفظ التغييرات",
+    "cancel": "إلغاء",
+    "search": "بحث",
+    "ok": "موافق",
+    "close": "إغلاق"
+  },
+
+  "placeholders": {
+    "search_products": "ابحث عن منتج أو رمز...",
+    "enter_email": "أدخل بريدك الإلكتروني",
+    "enter_password": "أدخل كلمة المرور",
+    "enter_phone": "أدخل رقم الهاتف",
+    "enter_address": "أدخل العنوان"
+  },
+
+  "validation": {
+    "required": "هذا الحقل مطلوب",
+    "invalid_email": "البريد الإلكتروني غير صالح",
+    "min_password": "يجب أن تتكون كلمة المرور من 6 أحرف على الأقل"
+  },
+
+  "ui": {
+    "loading": "جارٍ التحميل",
+    "no_results": "لا توجد نتائج",
+    "view_more": "عرض المزيد",
+    "edit": "تعديل",
+    "delete": "حذف"
+  },
+
+  "auth": {
+    "already_have_account": "لديك حساب بالفعل؟ {{link}}",
+    "username": "اسم المستخدم",
+    "phone": "الهاتف",
+    "address": "العنوان"
+  },
+
+  "tabs": {
+    "profile": "الملف",
+    "products": "المنتجات",
+    "orders": "الطلبات",
+    "about": "حول",
+    "contact": "اتصل"
+  },
+
+  "notifications": {
+    "no_notifications": "لا توجد إشعارات",
+    "view_notifications": "عرض الإشعارات"
+  }
 }

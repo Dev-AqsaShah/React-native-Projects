@@ -1,6 +1,6 @@
 {
   "welcome_title": "3PL Dynamics",
-  "welcome_about": "आधुनिक व्यवसायों के लिए स्मार्ट लॉजिस्टिक्स। रीयल-टाइम ट्रैकिंग, तेज़ डिलीवरी और पारदर्शी संचालन। स्थानीय डिलीवरी से राष्ट्रीय वितरण तक के लिए निर्मित।",
+  "welcome_about": "आधुनिक व्यवसायों के लिए स्मार्ट लॉजिस्टिक्स। रीयल-टाइम ट्रैकिंग, तेज़ डिलीवरी और पारदर्शी ऑपरेशन। स्थानीय डिलीवरी से राष्ट्रीय वितरण तक के लिए निर्मित।",
   "sign_in": "साइन इन करें",
   "create_account": "खाता बनाएँ",
   "welcome_back": "वापसी पर स्वागत है",
@@ -12,7 +12,7 @@
   "create_account_small": "खाता बनाएँ",
   "dashboard": "डैशबोर्ड",
   "welcome_dashboard": "3PL Dynamics में आपका स्वागत है",
-  "language_changed_restart": "भाषा बदल दी गई है। लेआउट दिशा लागू करने के लिए ऐप को पुनः आरंभ करें।",
+  "language_changed_restart": "भाषा बदल दी गई है। लेआउट दिशा लागू करने के लिए कृपया ऐप को पुनः आरंभ करें।",
   "hello": "नमस्ते,",
   "overview": "सारांश",
   "orders": "ऑर्डर",
@@ -22,5 +22,100 @@
   "sign_out": "साइन आउट करें",
   "full_name": "पूरा नाम",
   "create_account_title": "खाता बनाएँ",
-  "join_subtitle": "अपनी लॉजिस्टिक्स को प्रबंधित करने के लिए 3PL Dynamics से जुड़ें"
+  "join_subtitle": "अपनी लॉजिस्टिक्स का प्रबंधन करने के लिए 3PL Dynamics से जुड़ें",
+
+  "settings": "सेटिंग्स",
+  "language": "भाषा",
+  "select_language": "भाषा चुनें",
+  "language_changed": "भाषा बदल गई",
+  "close": "बंद करें",
+
+  "profile": "प्रोफ़ाइल",
+  "profile_name": "नाम",
+  "profile_email": "ईमेल",
+  "profile_phone": "फ़ोन",
+  "profile_address": "पता",
+  "profile_role": "भूमिका",
+  "profile_company": "कंपनी",
+  "profile_edit": "प्रोफ़ाइल संपादित करें",
+  "profile_upload_photo": "फ़ोटो अपलोड करें",
+  "profile_placeholder_avatar": "फ़ोटो अपलोड करने के लिए टैप करें",
+
+  "products": "उत्पाद",
+  "product_details": "उत्पाद विवरण",
+  "product_quantity": "मात्रा",
+  "product_description": "विवरण",
+  "view_details": "विवरण देखें",
+  "add_to_cart": "कार्ट में जोड़ें",
+  "sku": "SKU",
+
+  "orders_title": "ऑर्डर",
+  "order_number": "ऑर्डर संख्या",
+  "order_status": "ऑर्डर स्थिति",
+  "status_in_transit": "ट्रांज़िट में",
+  "status_delivered": "डिलिवर हो चुका",
+  "status_pending": "अनमोलित",
+  "status_cancelled": "रद्द किया गया",
+  "order_details": "ऑर्डर विवरण",
+  "track_order": "ऑर्डर ट्रैक करें",
+  "placed_on": "ऑर्डर दिनांक",
+
+  "about_title": "हमारे बारे में",
+  "about_paragraph": "हम आधुनिक लॉजिस्टिक्स समाधान प्रदान करते हैं: रीयल-टाइम ट्रैकिंग, मार्ग अनुकूलन और पारदर्शी संचालन ताकि व्यवसाय बढ़ सकें।",
+
+  "contact_title": "संपर्क करें",
+  "contact_support": "सपोर्ट: support@3pldynamics.com",
+  "contact_phone": "फ़ोन: +1 555 123 456",
+  "email_support": "सपोर्ट को ईमेल करें",
+  "call_support": "सपोर्ट को कॉल करें",
+
+  "buttons": {
+    "save_changes": "बदलाव सहेजें",
+    "cancel": "रद्द करें",
+    "search": "खोजें",
+    "ok": "ठीक है",
+    "close": "बंद करें"
+  },
+
+  "placeholders": {
+    "search_products": "उत्पाद या SKU के द्वारा खोजें...",
+    "enter_email": "ईमेल दर्ज करें",
+    "enter_password": "पासवर्ड दर्ज करें",
+    "enter_phone": "फ़ोन नंबर दर्ज करें",
+    "enter_address": "पता दर्ज करें"
+  },
+
+  "validation": {
+    "required": "यह फ़ील्ड आवश्यक है",
+    "invalid_email": "अमान्य ईमेल पता",
+    "min_password": "पासवर्ड कम से कम 6 अक्षरों का होना चाहिए"
+  },
+
+  "ui": {
+    "loading": "लोड हो रहा है",
+    "no_results": "कोई परिणाम नहीं मिला",
+    "view_more": "और देखें",
+    "edit": "संपादित करें",
+    "delete": "हटाएँ"
+  },
+
+  "auth": {
+    "already_have_account": "क्या पहले से खाता है? {{link}}",
+    "username": "उपयोगकर्ता नाम",
+    "phone": "फ़ोन",
+    "address": "पता"
+  },
+
+  "tabs": {
+    "profile": "प्रोफ़ाइल",
+    "products": "उत्पाद",
+    "orders": "ऑर्डर",
+    "about": "के बारे में",
+    "contact": "संपर्क"
+  },
+
+  "notifications": {
+    "no_notifications": "कोई सूचनाएँ नहीं",
+    "view_notifications": "सूचनाएँ देखें"
+  }
 }

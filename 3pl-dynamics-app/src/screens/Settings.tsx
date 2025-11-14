@@ -1,4 +1,3 @@
-// src/screens/Settings.tsx
 import React, { useState, useMemo } from 'react';
 import {
   View,
@@ -12,8 +11,12 @@ import {
 } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { Ionicons } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../navigation/AppStack';
 
-// Define your languages here
+type SettingsScreenProp = NativeStackNavigationProp<RootStackParamList, 'Settings'>;
+
 const LANGS: { code: string; name: string; flag: string; rtl?: boolean }[] = [
   { code: 'en', name: 'English', flag: '🇺🇸' },
   { code: 'es', name: 'Español', flag: '🇪🇸' },
@@ -29,36 +32,45 @@ const LANGS: { code: string; name: string; flag: string; rtl?: boolean }[] = [
 
 export default function SettingsScreen() {
   const { i18n, t } = useTranslation();
-  const selected = i18n.language || 'en';
-
+  const navigation = useNavigation<SettingsScreenProp>();
+  const [selectedLang, setSelectedLang] = useState(i18n.language || 'en');
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const scaleAnim = useMemo(() => new Animated.Value(0.95), []);
 
   // Animate dropdown
-  if (dropdownVisible) {
-    Animated.spring(scaleAnim, { toValue: 1, useNativeDriver: true, stiffness: 200, damping: 18 }).start();
-  } else {
-    Animated.timing(scaleAnim, { toValue: 0.95, duration: 120, useNativeDriver: true }).start();
-  }
+  Animated.spring(scaleAnim, {
+    toValue: dropdownVisible ? 1 : 0.95,
+    useNativeDriver: true,
+    stiffness: 200,
+    damping: 18,
+  }).start();
 
-  function changeLanguage(code: string, rtl?: boolean) {
-    i18n.changeLanguage(code).catch(() => {});
-    if (rtl) {
-      try {
-        if (!I18nManager.isRTL) I18nManager.forceRTL(true);
-      } catch {}
-    } else {
-      try {
-        if (I18nManager.isRTL) I18nManager.forceRTL(false);
-      } catch {}
-    }
+  // Change language
+  const changeLanguage = async (code: string, rtl?: boolean) => {
+    await i18n.changeLanguage(code); // Update i18next language
+    setSelectedLang(code);           // Trigger re-render for all text
     setDropdownVisible(false);
-  }
+
+    // Handle RTL layout
+    if (rtl && !I18nManager.isRTL) {
+      I18nManager.forceRTL(true);
+    } else if (!rtl && I18nManager.isRTL) {
+      I18nManager.forceRTL(false);
+    }
+  };
 
   return (
     <SafeAreaView style={styles.safeArea}>
+      {/* Header */}
       <View style={styles.header}>
+        <Pressable
+          style={styles.backBtn}
+          onPress={() => navigation.navigate('Welcome')}
+        >
+          <Ionicons name="chevron-back" size={24} color="#fff" />
+        </Pressable>
         <Text style={styles.headerTitle}>{t('settings') || 'Settings'}</Text>
+        <View style={{ width: 24 }} />
       </View>
 
       <ScrollView contentContainerStyle={styles.container}>
@@ -69,10 +81,14 @@ export default function SettingsScreen() {
           onPress={() => setDropdownVisible(!dropdownVisible)}
         >
           <Text style={styles.languageBtnText}>
-            {LANGS.find(l => selected.startsWith(l.code))?.flag}{' '}
-            {LANGS.find(l => selected.startsWith(l.code))?.name}
+            {LANGS.find(l => selectedLang.startsWith(l.code))?.flag}{' '}
+            {LANGS.find(l => selectedLang.startsWith(l.code))?.name}
           </Text>
-          <Ionicons name={dropdownVisible ? 'chevron-up' : 'chevron-down'} size={20} color="#0B3B8F" />
+          <Ionicons
+            name={dropdownVisible ? 'chevron-up' : 'chevron-down'}
+            size={20}
+            color="#0B3B8F"
+          />
         </Pressable>
 
         {dropdownVisible && (
@@ -82,14 +98,14 @@ export default function SettingsScreen() {
                 key={lang.code}
                 style={[
                   styles.dropdownItem,
-                  selected.startsWith(lang.code) ? styles.dropdownItemSelected : null,
+                  selectedLang.startsWith(lang.code) ? styles.dropdownItemSelected : null,
                 ]}
                 onPress={() => changeLanguage(lang.code, lang.rtl)}
               >
                 <Text style={styles.dropdownItemText}>
                   {lang.flag} {lang.name}
                 </Text>
-                {selected.startsWith(lang.code) && (
+                {selectedLang.startsWith(lang.code) && (
                   <Ionicons name="checkmark" size={20} color="#0B3B8F" />
                 )}
               </Pressable>
@@ -104,9 +120,18 @@ export default function SettingsScreen() {
 const styles = StyleSheet.create({
   safeArea: { flex: 1, backgroundColor: '#f9fafb' },
   header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
     paddingVertical: 16,
     paddingHorizontal: 20,
     backgroundColor: '#0B3B8F',
+  },
+  backBtn: {
+    padding: 6,
+    borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   headerTitle: { color: '#fff', fontSize: 20, fontWeight: '700' },
   container: { padding: 20 },
@@ -114,7 +139,7 @@ const styles = StyleSheet.create({
   languageBtn: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingVertical: 12,
+    paddingVertical: 14,
     paddingHorizontal: 16,
     backgroundColor: '#fff',
     borderRadius: 12,

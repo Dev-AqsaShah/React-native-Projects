@@ -1,6 +1,7 @@
 {
   "welcome_title": "3PL Dynamics",
   "welcome_about": "جدید کاروبار کے لیے اسمارٹ لاجسٹکس۔ ریئل ٹائم ٹریکنگ، تیز تر ڈیلیوری اور شفاف آپریشنز۔ مقامی ترسیل سے لے کر قومی تقسیم تک کے لیے تیار۔",
+
   "sign_in": "سائن ان کریں",
   "create_account": "اکاؤنٹ بنائیں",
   "welcome_back": "واپسی پر خوش آمدید",
@@ -10,9 +11,9 @@
   "forgot_password": "پاس ورڈ بھول گئے؟",
   "dont_have_account": "کیا آپ کا اکاؤنٹ نہیں ہے؟ {{link}}",
   "create_account_small": "اکاؤنٹ بنائیں",
+
   "dashboard": "ڈیش بورڈ",
   "welcome_dashboard": "3PL Dynamics میں خوش آمدید",
-  "language_changed_restart": "زبان تبدیل کر دی گئی ہے۔ لے آؤٹ کی سمت لاگو کرنے کے لیے ایپ کو دوبارہ شروع کریں۔",
   "hello": "ہیلو،",
   "overview": "جائزہ",
   "orders": "آرڈرز",
@@ -20,7 +21,104 @@
   "dashboard_note": "شپمنٹس کو ٹریک کریں، کارکردگی کا جائزہ لیں اور راستوں کو منظم کریں — سب ایک ہی جگہ۔",
   "go_to_dashboard": "ڈیش بورڈ پر جائیں",
   "sign_out": "سائن آؤٹ کریں",
+
   "full_name": "پورا نام",
   "create_account_title": "اکاؤنٹ بنائیں",
-  "join_subtitle": "اپنی لاجسٹکس کا انتظام کرنے کے لیے 3PL Dynamics میں شامل ہوں"
+  "join_subtitle": "اپنی لاجسٹکس کا انتظام کرنے کے لیے 3PL Dynamics میں شامل ہوں",
+
+  "settings": "سیٹنگز",
+  "language": "زبان",
+  "select_language": "زبان منتخب کریں",
+  "language_changed": "زبان تبدیل کر دی گئی",
+  "language_changed_restart": "زبان تبدیل کر دی گئی ہے۔ لے آؤٹ کی سمت لاگو کرنے کے لیے ایپ کو دوبارہ شروع کریں۔",
+  "close": "بند کریں",
+
+  "profile": "پروفائل",
+  "profile_name": "نام",
+  "profile_email": "ای میل",
+  "profile_phone": "فون نمبر",
+  "profile_address": "پتہ",
+  "profile_role": "عہدہ",
+  "profile_company": "کمپنی",
+  "profile_edit": "پروفائل میں ترمیم کریں",
+  "profile_upload_photo": "تصویر اپ لوڈ کریں",
+  "profile_placeholder_avatar": "تصویر اپ لوڈ کرنے کے لیے ٹیپ کریں",
+
+  "products": "پروڈکٹس",
+  "product_details": "پروڈکٹ کی تفصیلات",
+  "product_quantity": "مقدار",
+  "product_description": "تفصیل",
+  "view_details": "تفصیلات دیکھیں",
+  "add_to_cart": "کارٹ میں شامل کریں",
+  "sku": "ایس کیو یو",
+
+  "orders_title": "آرڈرز",
+  "order_number": "آرڈر نمبر",
+  "order_status": "آرڈر اسٹیٹس",
+  "status_in_transit": "راستے میں",
+  "status_delivered": "ڈیلیور ہو گیا",
+  "status_pending": "زیر التواء",
+  "status_cancelled": "منسوخ",
+  "order_details": "آرڈر کی تفصیلات",
+  "track_order": "آرڈر ٹریک کریں",
+  "placed_on": "رکھا گیا",
+
+  "about_title": "ہمارے بارے میں",
+  "about_paragraph": "ہم جدید لاجسٹکس حل فراہم کرتے ہیں: ریئل ٹائم ٹریکنگ، روٹس کی آپٹیمائزیشن اور شفاف آپریشنز تاکہ کاروبار بہتر انداز میں ترقی کر سکیں۔",
+
+  "contact_title": "رابطہ",
+  "contact_support": "سپورٹ: support@3pldynamics.com",
+  "contact_phone": "فون: +1 555 123 456",
+  "email_support": "سپورٹ کو ای میل کریں",
+  "call_support": "سپورٹ کو کال کریں",
+
+  "buttons": {
+    "save_changes": "تبدیلیاں محفوظ کریں",
+    "cancel": "منسوخ کریں",
+    "search": "تلاش کریں",
+    "ok": "ٹھیک ہے",
+    "close": "بند کریں"
+  },
+
+  "placeholders": {
+    "search_products": "پروڈکٹ یا SKU تلاش کریں...",
+    "enter_email": "ای میل درج کریں",
+    "enter_password": "پاس ورڈ درج کریں",
+    "enter_phone": "فون نمبر درج کریں",
+    "enter_address": "پتہ درج کریں"
+  },
+
+  "validation": {
+    "required": "یہ فیلڈ ضروری ہے",
+    "invalid_email": "غلط ای میل ایڈریس",
+    "min_password": "پاس ورڈ کم از کم 6 حروف کا ہونا چاہیے"
+  },
+
+  "ui": {
+    "loading": "لوڈ ہو رہا ہے",
+    "no_results": "کوئی نتائج نہیں ملے",
+    "view_more": "مزید دیکھیں",
+    "edit": "ترمیم",
+    "delete": "حذف کریں"
+  },
+
+  "auth": {
+    "already_have_account": "کیا آپ کا پہلے سے اکاؤنٹ ہے؟ {{link}}",
+    "username": "یوزر نیم",
+    "phone": "فون نمبر",
+    "address": "پتہ"
+  },
+
+  "tabs": {
+    "profile": "پروفائل",
+    "products": "پروڈکٹس",
+    "orders": "آرڈرز",
+    "about": "ہمارے بارے میں",
+    "contact": "رابطہ"
+  },
+
+  "notifications": {
+    "no_notifications": "کوئی نوٹیفکیشن نہیں",
+    "view_notifications": "نوٹیفکیشن دیکھیں"
+  }
 }
